@@ -8,7 +8,7 @@ const buttonValues = ([
   ['Number', 7], ['Number', 8], ['Number', 9], ['Operator', '*'],
   ['Number', 4], ['Number', 5], ['Number', 6], ['Operator', '-'],
   ['Number', 1], ['Number', 2], ['Number', 3], ['Operator', '+'],
-  ['Number', 0], ['Decimal', '.'], ['Equal', '='],
+  ['Number', 0], ['Decimal', '.'],
 ]);
 
 const ButtonBox = ({ setCalculation }) => {
@@ -27,6 +27,13 @@ const ButtonBox = ({ setCalculation }) => {
           />
         </Grid>
       ))}
+      <Grid item xs={6} xl={6} key="=">
+        <BtnCalculator
+          value="="
+          category="Equal"
+          setCalculation={clickButtonHandler}
+        />
+      </Grid>
     </Grid>
   );
 };

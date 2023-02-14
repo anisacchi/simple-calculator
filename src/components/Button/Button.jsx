@@ -1,6 +1,6 @@
-import { Button } from '@mui/material';
 import React from 'react';
 import PropTypes from 'prop-types';
+import ButtonStyle from './ButtonStyle';
 
 const BtnCalculator = ({ value, category, setCalculation }) => {
   const onClickHandler = (props) => {
@@ -8,12 +8,12 @@ const BtnCalculator = ({ value, category, setCalculation }) => {
   };
 
   return (
-    <Button
-      sx={{ width: '100%', height: 'auto', aspectRatio: '1/1' }}
+    <ButtonStyle
       onClick={() => onClickHandler({ value, category })}
+      className={category}
     >
       {value}
-    </Button>
+    </ButtonStyle>
   );
 };
 

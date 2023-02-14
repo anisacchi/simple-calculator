@@ -4,10 +4,10 @@ import TextFieldStyle from './ScreenStyle';
 
 const ScreenCalculation = ({ calculation }) => (
   <TextFieldStyle
-    id="screenCalculation"
     value={calculation}
     fullWidth
     disabled
+    className="calculationScreen"
   />
 );
 

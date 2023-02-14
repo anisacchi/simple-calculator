@@ -9,8 +9,17 @@ const TextFieldStyle = styled(TextField)(() => ({
   },
   '& .MuiOutlinedInput-input': {
     textAlign: 'right',
-    fontSize: '2rem',
     padding: 0,
+  },
+  '&.calculationScreen': {
+    '& .MuiOutlinedInput-input': {
+      fontSize: '1.5rem',
+    },
+  },
+  '&.resultScreen': {
+    '& .MuiOutlinedInput-input': {
+      fontSize: '2rem',
+    },
   },
 }));
 

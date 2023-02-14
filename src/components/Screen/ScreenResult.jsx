@@ -3,7 +3,12 @@ import PropTypes from 'prop-types';
 import TextFieldStyle from './ScreenStyle';
 
 const ScreenResult = ({ result }) => (
-  <TextFieldStyle fullWidth disabled id="screenResult" value={result} />
+  <TextFieldStyle
+    value={result}
+    fullWidth
+    disabled
+    className="resultScreen"
+  />
 );
 
 ScreenResult.propTypes = {
